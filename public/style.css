@@ -113,6 +113,24 @@ h2 {
   border: 1px solid #0a8f2c33;
 }
 
+#status-grid tr {
+  position: relative;
+}
+
+#status-grid tr::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  animation: row-scan 10s ease-in-out infinite;
+  animation-delay: var(--scan-delay, 0s);
+}
+
+@keyframes row-scan {
+  0%, 10%, 100% { background: transparent; }
+  5% { background: #00ff4118; box-shadow: 0 0 20px #00ff4120 inset; }
+}
+
 #status-grid th {
   background: #0d1a0d;
   color: #00cc33;
@@ -144,6 +162,24 @@ h2 {
   font-weight: 700;
   font-size: 1.5rem;
   text-shadow: 0 0 8px #ff0000, 0 0 20px #ff000088;
+}
+
+.flash-down {
+  animation: flash-red 1s ease-out;
+}
+
+.flash-up {
+  animation: flash-green 1s ease-out;
+}
+
+@keyframes flash-red {
+  0% { background: #ff0000aa; }
+  100% { background: #ff000030; }
+}
+
+@keyframes flash-green {
+  0% { background: #00ff41aa; }
+  100% { background: #00ff4130; }
 }
 
 .status-unknown {
