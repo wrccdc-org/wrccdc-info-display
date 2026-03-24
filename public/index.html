@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WRCCDC Info Display</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&family=Kode+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.183.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.183.2/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="top-bar">
+    <div id="datetime">
+      <span id="date"></span>
+      <span id="clock"></span>
+    </div>
+  </div>
+
+  <main>
+    <section id="service-status">
+      <div id="status-grid"></div>
+    </section>
+    <div id="scoreboard-url"></div>
+    <div id="last-updated"></div>
+  </main>
+
+  <canvas id="logo-canvas"></canvas>
+  <div id="bottom-text">Western Regional Collegiate Cyber Defense Competition 2026</div>
+
+  <script type="module" src="logo3d.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

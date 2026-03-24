@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  font-size: 1.5rem;
+  background: #000000;
+  color: #00ff41;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Top-right clock & round info */
+#top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 2rem;
+  z-index: 10;
+}
+
+#scoreboard-url {
+  text-align: right;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #00ff41;
+  margin-top: 0.75rem;
+}
+
+#datetime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#date {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0a8f2c;
+}
+
+#clock {
+  font-family: 'Kode Mono', monospace;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #00ff41;
+}
+
+/* Bottom-left logo */
+#logo-canvas {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 2rem;
+  height: 9rem;
+  aspect-ratio: 700 / 460;
+  z-index: 10;
+}
+
+#bottom-text {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00ff41;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+
+/* Main content */
+main {
+  position: relative;
+  padding: 8rem 2rem 12rem 2rem;
+}
+
+section {
+  padding: 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: #00ff41;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #0a8f2c44;
+}
+
+/* Service Status Grid */
+#status-grid {
+  overflow-x: auto;
+}
+
+#status-grid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#status-grid th,
+#status-grid td {
+  padding: 0.8rem 1rem;
+  text-align: center;
+  border: 1px solid #0a8f2c33;
+}
+
+#status-grid th {
+  background: #0d1a0d;
+  color: #00cc33;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#status-grid th.team-header {
+  text-align: left;
+}
+
+#status-grid td.team-name {
+  text-align: left;
+  font-weight: 700;
+  color: #00ff41;
+}
+
+.status-up {
+  background: #00ff4130;
+  color: #00ff41;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 0 0 8px #00ff41, 0 0 20px #00ff4188;
+}
+
+.status-down {
+  background: #ff000030;
+  color: #ff1a1a;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 0 0 8px #ff0000, 0 0 20px #ff000088;
+}
+
+.status-unknown {
+  color: #0a8f2c;
+}
+
+#last-updated {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0a8f2c;
+  margin-top: 0;
+}
+
+#status-grid .no-data {
+  color: #0a8f2c;
+  font-style: italic;
+  font-size: 2.5rem;
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
