@@ -170,7 +170,7 @@ function renderServiceGrid(data) {
           val === 1 ? "status-up" :
           val === 2 ? `status-down${flipped ? " flash-down" : ""}` :
           "status-unknown";
-        cell.textContent =
+        cell.innerHTML =
           val === 1 ? "\u25B2" :
           val === 2 ? "<span>\u25BC</span>" :
           "—";
