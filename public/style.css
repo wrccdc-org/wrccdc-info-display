@@ -108,7 +108,7 @@ h2 {
 
 #status-grid th,
 #status-grid td {
-  padding: 0.8rem 1rem;
+  padding: 0.4rem 0.5rem;
   text-align: center;
   border: 1px solid #0a8f2c33;
 }
@@ -152,7 +152,7 @@ h2 {
   background: #00ff4130;
   color: #00ff41;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-shadow: 0 0 8px #00ff41, 0 0 20px #00ff4188;
 }
 
@@ -160,7 +160,7 @@ h2 {
   background: #ff000030;
   color: #ff1a1a;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-shadow: 0 0 8px #ff0000, 0 0 20px #ff000088;
 }
 
