@@ -185,6 +185,16 @@ h2 {
   text-shadow: 0 0 8px #ff0000, 0 0 20px #ff000088;
 }
 
+.status-down span {
+  display: inline-block;
+  animation: spin-down 2s linear infinite;
+}
+
+@keyframes spin-down {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
 .flash-down {
   animation: flash-red 1s ease-out;
 }

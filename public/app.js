@@ -131,7 +131,7 @@ function renderServiceGrid(data) {
         if (val === 1) {
           html += `<td class="status-up" data-key="${key}">\u25B2</td>`;
         } else if (val === 2) {
-          html += `<td class="status-down" data-key="${key}">\u25BC</td>`;
+          html += `<td class="status-down" data-key="${key}"><span>\u25BC</span></td>`;
         } else {
           html += `<td class="status-unknown" data-key="${key}">—</td>`;
         }
@@ -172,7 +172,7 @@ function renderServiceGrid(data) {
           "status-unknown";
         cell.textContent =
           val === 1 ? "\u25B2" :
-          val === 2 ? "\u25BC" :
+          val === 2 ? "<span>\u25BC</span>" :
           "—";
       }
     }
