@@ -138,7 +138,11 @@ function renderServiceGrid(data) {
       }
       html += "</tr>";
     }
-    html += "</tbody></table>";
+    html += "</tbody><tfoot><tr><td></td>";
+    for (const svc of serviceNames) {
+      html += `<td class="service-label"><span>${svc}</span></td>`;
+    }
+    html += "</tr></tfoot></table>";
     grid.innerHTML = html;
 
     // Set up scan wave delays

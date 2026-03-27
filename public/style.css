@@ -31,7 +31,7 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   color: #00ff41;
-  margin-top: 0.75rem;
+  margin-top: 6rem;
 }
 
 #datetime {
@@ -98,12 +98,13 @@ h2 {
 
 /* Service Status Grid */
 #status-grid {
-  overflow-x: auto;
+  overflow: visible;
 }
 
 #status-grid table {
   width: 100%;
   border-collapse: collapse;
+  overflow: visible;
 }
 
 #status-grid th,
@@ -146,6 +147,26 @@ h2 {
   text-align: left;
   font-weight: 700;
   color: #00ff41;
+}
+
+.service-label {
+  font-size: 1rem;
+  color: #00cc33;
+  font-weight: 600;
+  position: relative;
+  height: 0;
+  padding: 0 !important;
+  border: none !important;
+  overflow: visible;
+}
+
+.service-label span {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  transform: rotate(-60deg);
+  transform-origin: top right;
+  white-space: nowrap;
 }
 
 .status-up {
